@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Роман Марданов](https://up.htmlacademy.ru/adaptive/28/user/949427).
-* Наставник: `Неизвестно`.
+* Наставник: [Татьяна Симоненко](https://htmlacademy.ru/profile/tatien).
 
 ---
 
