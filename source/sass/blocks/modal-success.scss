@@ -1,0 +1,22 @@
+.modal-success {
+  padding: 39px 20px 20px;
+}
+
+.modal-success__title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.modal-success__text {
+  @include text-base;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.modal-success__button {
+  display: block;
+  box-sizing: border-box;
+  margin: 0 auto;
+  width: 280px;
+  height: 58px;
+}

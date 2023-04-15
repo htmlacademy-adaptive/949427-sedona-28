@@ -1,0 +1,22 @@
+.photo-card__image {
+  display: block;
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.photo-card__title {
+  @include text-base;
+  font-weight: 700;
+}
+
+.photo-card__author {
+  @include text-base;
+  color: #333333;
+  margin-bottom: 16px;
+}
+
+.photo-card__likes {
+  @include text-base;
+  font-weight: 700;
+  padding-left: 37px;
+}

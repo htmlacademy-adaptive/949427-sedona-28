@@ -1,0 +1,21 @@
+.modal-failure {
+  padding: 45px 41px 35px;
+}
+
+.modal-failure__title {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.modal-failure__text {
+  @include text-base;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.modal-failure__button {
+  display: block;
+  margin: 0 auto;
+  width: 180px;
+  height: 58px;
+}

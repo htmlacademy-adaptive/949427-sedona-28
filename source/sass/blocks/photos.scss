@@ -1,0 +1,19 @@
+.photos__title {
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 37px;
+}
+
+.photos__lead {
+  @include text-base;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.photos__list {
+  @include list-reset;
+}
+
+.photos__item {
+  padding: 24px 0 25px;
+}

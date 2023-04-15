@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -28,11 +29,11 @@
       </nav>
     </header>
     <main class="main-container">
-      <section class="hero hero--size-short">
+      <section class="main-container__hero hero hero--size-short">
         <h1 class="visually-hidden">Ваш отзыв о Седоне</h1>
-        <img class="hero__slogan" src="img/slogan.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+        <img class="hero__slogan hero__slogan--short" src="img/slogan.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
       </section>
-      <section class="feedback">
+      <section class="main-container__feedback feedback">
         <h2 class="feedback__title title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>
         <p class="feedback__lead">
           ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ
@@ -120,9 +121,8 @@
           </fieldset>
           <fieldset class="feedback__group">
             <legend class="feedback__title title">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
-            <label class="visually-hidden" for="message-field">Ваши впечатления:
-              <textarea name="message-field" id="message-field" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
-            </label>
+            <label class="visually-hidden" for="message-field">Ваши впечатления:</label>
+            <textarea name="message-field" id="message-field" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="feedback__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
           <p class="feedback__comment">
@@ -149,7 +149,7 @@
         </ul>
       </section>
       <div class="footer__copyright copyright">
-        <span class="copyright__text">РАЗРАБОТАНО:</span>
+        <span class="copyright__text">РАЗРАБОТАНО</span>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy-logo.svg" alt="htmlacademy."></a>
       </div>
     </footer>
