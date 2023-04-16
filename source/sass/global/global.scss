@@ -1,0 +1,34 @@
+//глобальные стили
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+//заголовки
+
+.title {
+  margin: 0;
+  padding: 0;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.title--theme-base {
+  color: #000000;
+}
+
+.title--theme-dark {
+  color: $element-color-dark;
+}

@@ -1,1 +1,31 @@
-// Начните писать стили здесь
+// примеси и переменные
+
+@import "./variables.scss";
+@import "./mixins.scss";
+
+// глобальные стили
+
+@import "./global/fonts.scss";
+@import "./global/global.scss";
+
+// блоки
+
+@import "./blocks/page.scss";
+@import "./blocks/main-header.scss";
+@import "./blocks/main-navigation.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/service-list.scss";
+@import "./blocks/find-hotel.scss";
+@import "./blocks/button.scss";
+@import "./blocks/map.scss";
+@import "./blocks/footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/photos.scss";
+@import "./blocks/photo-card.scss";
+@import "./blocks/video.scss";
+@import "./blocks/feedback.scss";
+@import "./blocks/modal-failure.scss";
+@import "./blocks/modal-success.scss";

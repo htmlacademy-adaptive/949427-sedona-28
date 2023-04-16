@@ -1,0 +1,22 @@
+.find-hotel {
+  padding: 38px 18px 49px;
+}
+
+.find-hotel__title {
+  font-size: 21px;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.find-hotel__text {
+  @include text-base;
+  margin: 0;
+  margin-bottom: 32px;
+  text-align: center;
+}
+
+.find-hotel__link {
+  display: block;
+  padding: 16px;
+  text-decoration: none;
+}

@@ -1,0 +1,25 @@
+.button {
+  padding: 10px;
+  background-color: $button-color-base;
+  color: $element-color-dark;
+  text-align: center;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-color-hover;
+  }
+
+  &:active {
+    background-color: $button-color-down;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: $button-color-disabled;
+  }
+}

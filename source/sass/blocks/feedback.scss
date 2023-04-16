@@ -1,0 +1,39 @@
+.feedback__title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.feedback__lead {
+  @include text-base;
+  padding-top: 4px;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.feedback__group {
+  margin-top: 24px;
+  border: none;
+}
+
+.feedback__label {
+  @include text-base;
+  display: block;
+  margin-bottom: 16px;
+}
+
+.feedback__label--additional {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.feedback__button {
+  width: 100%;
+}
+
+.feedback__comment {
+  @include text-base;
+  font-size: 12px;
+  color: rgba(51, 51, 51, 0.6);
+  text-align: right;
+}
