@@ -26,7 +26,7 @@
   padding-top: 54px;
 }
 
-.advantages__item:first-child>.advantages__text {
+.advantages__item:first-child .advantages__text {
   margin-bottom: 40px;
 }
 
@@ -42,7 +42,7 @@
   color: $element-color-dark;
 }
 
-.advantages__item--theme-dark>.advantages__title {
+.advantages__item--theme-dark .advantages__title {
   padding: 0 18px;
 }
 

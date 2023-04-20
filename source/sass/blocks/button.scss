@@ -3,7 +3,7 @@
   background-color: $button-color-base;
   color: $element-color-dark;
   text-align: center;
-  font-family: "PT Sans", sans-serif;
+  font-family: $font-base;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
@@ -16,7 +16,7 @@
 
   &:active {
     background-color: $button-color-down;
-    color: rgba(255, 255, 255, 0.3);
+    color: $element-color-dark-down;
   }
 
   &:disabled {
