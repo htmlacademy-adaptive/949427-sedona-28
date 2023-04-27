@@ -1,5 +1,11 @@
 .footer {
   padding: 33px 18px;
+  background-color: $page-bgcolor-base;
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .footer__text {

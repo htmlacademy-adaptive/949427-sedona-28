@@ -3,4 +3,13 @@
   padding: 0;
   background-color: $page-bgcolor-base;
   width: 320px;
+
+  @media (min-width: $width-tablet) {
+    width: $width-tablet;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+    background-color: #e7e5e5;
+  }
 }

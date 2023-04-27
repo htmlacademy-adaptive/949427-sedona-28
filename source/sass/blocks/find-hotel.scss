@@ -19,4 +19,9 @@
   display: block;
   padding: 16px;
   text-decoration: none;
+
+  @media (min-width: $width-tablet) {
+    width: 458px;
+    margin: 0 auto;
+  }
 }

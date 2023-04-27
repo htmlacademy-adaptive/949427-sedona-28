@@ -12,8 +12,32 @@
 
 .photos__list {
   @include list-reset;
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: $width-desktop) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 
 .photos__item {
   padding: 24px 0 25px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
+
+  &:first-child {
+    @media (min-width: $width-tablet) {
+      grid-column: span 2;
+    }
+
+    @media (min-width: $width-desktop) {
+      grid-column: span 3;
+    }
+  }
 }
