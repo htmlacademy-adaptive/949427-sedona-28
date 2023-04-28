@@ -1,5 +1,6 @@
 //переменные
 
+//цвета
 $page-bgcolor-base: #ffffff;
 $blocks-bgcolor-base: #81b3d2;
 $button-color-base: #81b3d2;
@@ -7,8 +8,15 @@ $button-color-hover: #669ec0;
 $button-color-down: #5496bd;
 $button-color-disabled: #e5e5e5;
 $element-color-light: #000000;
-$element-color-light-hover: #81B3d2;
+$element-color-light-hover: #81b3d2;
 $element-color-light-down: rgba(0, 0, 0, 0.3);
 $element-color-light-current: #766357;
 $element-color-dark: #ffffff;
-$element-color-dark-down: rgba(255, 255, 255, 1);
+$element-color-dark-down: rgba(255, 255, 255, 0.3);
+
+//шрифты
+$font-base: "PT Sans", sans-serif;
+
+//Viewports
+$width-tablet: 768px;
+$width-desktop: 1200px;

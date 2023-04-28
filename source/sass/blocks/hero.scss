@@ -2,15 +2,31 @@
   padding: 90px 19px 85px;
   box-sizing: border-box;
   background-color: $blocks-bgcolor-base;
-  background-image: url(../img/hero-background.jpg);
+  background-image: url("../img/hero-background.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
+
+  @media (min-width: $width-tablet) {
+    min-height: 518px;
+    padding: 77px 20px 91px;
+  }
 }
 
 .hero--size-short {
   padding: 52px 19px 67px;
   background-position: bottom;
+
+  @media (min-width: $width-tablet) {
+    min-height: 290px;
+    padding: 95px 60px 117px;
+  }
+
+  @media (min-width: $width-desktop) {
+    min-height: 301px;
+    padding: 101px 60px 120px;
+  }
 }
 
 .hero__slogan--short {

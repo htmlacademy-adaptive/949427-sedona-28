@@ -1,5 +1,29 @@
+.main-container {
+  background-color: $page-bgcolor-base;
+}
+
 .main-container__hero {
   margin-bottom: 32px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 47px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 59px;
+  }
+}
+
+.main-container__hero.hero--size-short {
+  margin-bottom: 37px;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 66px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-bottom: 100px;
+  }
 }
 
 .main-container__find-hotel {
@@ -7,7 +31,7 @@
 }
 
 .main-container__photos {
-  padding: 5px 20px 0;
+  padding: 0 20px;
 }
 
 .main-container__video {

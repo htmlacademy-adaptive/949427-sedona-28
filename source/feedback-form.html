@@ -2,6 +2,7 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
@@ -10,7 +11,7 @@
       <a class="main-header__logo" href="index.html">
         <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона.">
       </a>
-      <nav class="main-navigation">
+      <nav class="main-header__main-navigation main-navigation">
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
@@ -39,30 +40,25 @@
           ПОМОГИТЕ НАШИМ ОТЕЛЯМ СТАТЬ ЛУЧШЕ! ОСТАВЬТЕ ОТЗЫВ О НИХ, А ТАКЖЕ О ПОСЕЩЕННЫХ ВАМИ ДОСТОПРИМЕЧАТЕЛЬНОСТЯХ
         </p>
         <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="get">
-          <fieldset class="feedback__group">
+          <fieldset class="feedback__group feedback__group--width-half">
             <legend class="feedback__title title">ПРЕДСТАВЬТЕСЬ:</legend>
-            <label class="feedback__label" for="name-field">ИМЯ*:
-              <input class="feedback__input-field" type="text" placeholder="Имя" name="name-field" id="name-field" required value="Пётр">
-            </label>
-            <label class="feedback__label" for="surname-field">ФАМИЛИЯ*:
-              <input class="feedback__input-field" type="text" placeholder="Фамилия" name="surname-field" id="surname-field" required value="Пустота">
-            </label>
-            <label class="feedback__label" for="patronymic-field">ОТЧЕСТВО:
-              <input class="feedback__input-field" type="text" placeholder="Отчество" name="patronymic-field" id="patronymic-field" value="Викторович">
-            </label>
+            <label class="feedback__label" for="name-field">ИМЯ*:</label>
+            <input class="feedback__input-field" type="text" placeholder="Имя" name="name-field" id="name-field" required value="Пётр">
+            <label class="feedback__label" for="surname-field">ФАМИЛИЯ*:</label>
+            <input class="feedback__input-field" type="text" placeholder="Фамилия" name="surname-field" id="surname-field" required value="Пустота">
+            <label class="feedback__label" for="patronymic-field">ОТЧЕСТВО:</label>
+            <input class="feedback__input-field" type="text" placeholder="Отчество" name="patronymic-field" id="patronymic-field" value="Викторович">
           </fieldset>
-          <fieldset class="feedback__group">
+          <fieldset class="feedback__group feedback__group--width-half">
             <legend class="feedback__title title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
-            <label class="feedback__label" for="phone-field">КОНТАКТНЫЙ ТЕЛЕФОН*:
-              <input class="feedback__input-field" type="tel" placeholder="Введите телефон" name="phone-field" id="phone-field" required>
-            </label>
-            <label class="feedback__label" for="email-field">ЭЛЕКТРОННАЯ ПОЧТА*:
-              <input class="feedback__input-field" type="email" placeholder="Введите e-mail" name="email-field" id="email-field" required>
-            </label>
+            <label class="feedback__label" for="phone-field">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
+            <input class="feedback__input-field" type="tel" placeholder="Введите телефон" name="phone-field" id="phone-field" required>
+            <label class="feedback__label" for="email-field">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
+            <input class="feedback__input-field" type="email" placeholder="Введите e-mail" name="email-field" id="email-field" required>
           </fieldset>
-          <fieldset class="feedback__group">
+          <fieldset class="feedback__group feedback__group--width-full">
             <legend class="feedback__title title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
-            <ul class="feedback__list">
+            <ul class="feedback__list feedback__list--columns-2 feedback__list--columns-3">
               <li class="feedback__item">
                 <label class="feedback__label feedback__label--additional">
                   <input class="visually-hidden" type="radio" name="impression" value="positive impression" checked>
@@ -86,9 +82,9 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__group">
+          <fieldset class="feedback__group feedback__group--width-full">
             <legend class="feedback__title title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
-            <ul class="feedback__list">
+            <ul class="feedback__list feedback__list--columns-2 feedback__list--columns-4">
               <li class="feedback__item">
                 <label class="feedback__label feedback__label--additional">
                   <input class="visually-hidden" type="checkbox" name="devils bridge" checked>
@@ -119,7 +115,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__group">
+          <fieldset class="feedback__group feedback__group--width-full">
             <legend class="feedback__title title">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
             <label class="visually-hidden" for="message-field">Ваши впечатления:</label>
             <textarea name="message-field" id="message-field" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>

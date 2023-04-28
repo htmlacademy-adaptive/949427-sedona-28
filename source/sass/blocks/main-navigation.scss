@@ -1,0 +1,23 @@
+//главное меню
+
+.main-navigation__list {
+  @include list-reset;
+
+  @media (min-width: $width-tablet) {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-flow: dense;
+
+    &::after {
+      content: "";
+      grid-column: 3/4;
+      grid-row: 1/3;
+    }
+  }
+}
+
+.main-navigation__toggle {
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}

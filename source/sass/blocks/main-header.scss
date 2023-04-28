@@ -1,9 +1,16 @@
 .main-header {
   min-height: 56px;
   padding: 0 18px;
-  display: flex;
+  background-color: $page-bgcolor-base;
+  position: relative;
 }
 
 .main-header__main-navigation {
-  margin-left: auto;
+  text-align: right;
+}
+
+.main-header__logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
