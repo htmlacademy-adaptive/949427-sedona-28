@@ -1,13 +1,28 @@
 .photos__title {
-  font-size: 21px;
+  font-size: 18px;
   text-align: center;
-  margin-bottom: 37px;
+  margin-bottom: 26px;
+
+  @media (min-width: $width-tablet) {
+    font-size: 30px;
+    margin-bottom: 32px;
+  }
 }
 
 .photos__lead {
   @include text-base;
   text-align: center;
-  margin-bottom: 25px;
+  margin-bottom: 37px;
+
+  @media (min-width: $width-tablet) {
+    padding: 0 95px;
+    margin-bottom: 81px;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 370px;
+    margin-bottom: 87px;
+  }
 }
 
 .photos__list {
@@ -25,13 +40,24 @@
 }
 
 .photos__item {
-  padding: 24px 0 25px;
-
-  @media (min-width: $width-tablet) {
-    padding: 0;
-  }
+  position: relative;
+  padding: 25px 0 26px;
 
   &:first-child {
+    &::before {
+      position: absolute;
+      content: "";
+      height: 1px;
+      width: calc(100% + 40px);
+      background-color: #e5e5e5;
+      left: -20px;
+      top: -1px;
+
+      @media (min-width: $width-tablet) {
+        display: none;
+      }
+    }
+
     @media (min-width: $width-tablet) {
       grid-column: span 2;
     }
@@ -39,5 +65,134 @@
     @media (min-width: $width-desktop) {
       grid-column: span 3;
     }
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: calc(100% + 40px);
+    background-color: #e5e5e5;
+    left: -20px;
+    bottom: 0;
+
+    @media (min-width: $width-tablet) {
+      display: none;
+    }
+  }
+
+  @media (min-width: $width-tablet) {
+    padding: 0;
+  }
+}
+
+.photos__item:first-child .photo-card__image {
+  @media (min-width: $width-tablet) {
+    min-height: 400px;
+  }
+}
+
+.photos__item:nth-child(2n) .photo-card__title {
+  @media (min-width: $width-tablet) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: rgba($element-color-light, 0.3);
+    color: $element-color-dark;
+    padding: 18px 0 4px 25px;
+  }
+}
+
+.photos__item:nth-child(2n) .photo-card__author {
+  @media (min-width: $width-tablet) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: rgba($element-color-light, 0.3);
+    color: $element-color-dark;
+    padding-left: 25px;
+  }
+}
+
+.photos__item:nth-child(2n) .photo-card__likes {
+  @media (min-width: $width-tablet) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: rgba($element-color-light, 0.3);
+    color: $element-color-dark;
+  }
+}
+
+.photos__item:nth-child(2n+1) .photo-card__title {
+  @media (min-width: $width-tablet) {
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: rgba($element-color-light, 0.3);
+    color: $element-color-dark;
+    padding: 18px 0 4px 25px;
+  }
+}
+
+.photos__item:nth-child(2n+1) .photo-card__author {
+  @media (min-width: $width-tablet) {
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: rgba($element-color-light, 0.3);
+    color: $element-color-dark;
+    padding-left: 25px;
+  }
+}
+
+.photos__item:nth-child(2n+1) .photo-card__likes {
+  @media (min-width: $width-tablet) {
+    background-color: #eaeaea;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: rgba($element-color-light, 0.3);
+    color: $element-color-dark;
+  }
+}
+
+.photos__item:first-child .photo-card__title {
+  @media (min-width: $width-tablet) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: rgba($element-color-light, 0.3);
+    color: $element-color-dark;
+    padding: 22px 0 0 21px;
+  }
+}
+
+.photos__item:first-child .photo-card__author {
+  @media (min-width: $width-tablet) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: rgba($element-color-light, 0.3);
+    color: $element-color-dark;
+    padding: 0 0 15px 21px;
+  }
+}
+
+.photos__item:first-child .photo-card__likes {
+  @media (min-width: $width-tablet) {
+    background-color: #f2f2f2;
+  }
+
+  @media (min-width: $width-desktop) {
+    background-color: rgba($element-color-light, 0.3);
+    color: $element-color-dark;
   }
 }

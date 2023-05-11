@@ -1,10 +1,17 @@
 .footer {
-  padding: 33px 18px;
+  padding: 36px 18px;
   background-color: $page-bgcolor-base;
 
   @media (min-width: $width-tablet) {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 36px 60px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 36px 120px;
   }
 }
 
@@ -18,8 +25,24 @@
   line-height: 26px;
   text-align: center;
   color: #000000;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+    justify-self: left;
+  }
 }
 
 .footer__social {
-  margin-bottom: 30px;
+  margin-bottom: 29px;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 7px;
+    margin-bottom: 0;
+  }
+}
+
+.footer__copyright {
+  @media (min-width: $width-tablet) {
+    justify-self: right;
+  }
 }

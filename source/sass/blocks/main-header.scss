@@ -12,6 +12,7 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
 
   &:hover {
     opacity: 0.6;
@@ -20,10 +21,4 @@
   &:active {
     opacity: 0.3;
   }
-
-  @media (min-width: $width-tablet) {
-    z-index: 2;
-  }
-
-
 }

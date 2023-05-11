@@ -1,8 +1,18 @@
-.copyright {
+.copyright__link {
   display: flex;
   gap: 12px;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: $element-color-light;
+
+  &:hover {
+    color: $element-color-light-hover;
+  }
+
+  &:active {
+    color: $element-color-light-down;
+  }
 }
 
 .copyright__text {
