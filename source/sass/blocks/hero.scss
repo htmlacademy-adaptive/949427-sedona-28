@@ -2,10 +2,10 @@
   padding: 90px 19px 85px;
   box-sizing: border-box;
   background-color: $blocks-bgcolor-base;
-  background-image: url("../img/hero-background.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-image: url("../img/decoration/hero-spacer.svg"), url("../img/hero-background.jpg");
+  background-position: bottom center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: auto, cover;
   text-align: center;
 
   @media (min-width: $width-tablet) {
@@ -27,6 +27,17 @@
     min-height: 301px;
     padding: 101px 60px 120px;
   }
+}
+
+.hero--no-spacer {
+  @media (max-width: $width-tablet - 1px) {
+    background-image: url("../img/hero-background.jpg");
+  }
+}
+
+.hero__slogan {
+  display: block;
+  margin: 0 auto;
 }
 
 .hero__slogan--short {

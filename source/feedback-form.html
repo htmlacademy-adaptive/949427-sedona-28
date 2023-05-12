@@ -11,20 +11,20 @@
       <a class="main-header__logo" href="index.html">
         <img src="img/logo-sedona.svg" width="185" height="96" alt="Логотип Седона.">
       </a>
-      <nav class="main-header__main-navigation main-navigation">
+      <nav class="main-header__main-navigation main-navigation main-navigation--closed main-navigation--opened main-navigation--nojs">
         <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню.</span></button>
         <ul class="main-navigation__list">
           <li class="main-navigation__item">
-            <a href="index.html">ГЛАВНАЯ</a>
+            <a class="main-navigation__link" href="index.html">ГЛАВНАЯ</a>
           </li>
           <li class="main-navigation__item">
-            <a href="photo-and-video.html">ФОТО И ВИДЕО</a>
+            <a class="main-navigation__link" href="photo-and-video.html">ФОТО И ВИДЕО</a>
           </li>
           <li class="main-navigation__item">
-            <a href="#">ФОРМА ОТЗЫВА</a>
+            <a class="main-navigation__link" href="#">ФОРМА ОТЗЫВА</a>
           </li>
           <li class="main-navigation__item">
-            <a href="#">HTML ACADEMY</a>
+            <a class="main-navigation__link" href="http://htmlacademy.ru">HTML ACADEMY</a>
           </li>
         </ul>
       </nav>
@@ -41,7 +41,7 @@
         </p>
         <form class="feedback__form" action="https://echo.htmlacademy.ru/" method="get">
           <fieldset class="feedback__group feedback__group--width-half">
-            <legend class="feedback__title title">ПРЕДСТАВЬТЕСЬ:</legend>
+            <legend class="feedback__subtitle title">ПРЕДСТАВЬТЕСЬ:</legend>
             <label class="feedback__label" for="name-field">ИМЯ*:</label>
             <input class="feedback__input-field" type="text" placeholder="Имя" name="name-field" id="name-field" required value="Пётр">
             <label class="feedback__label" for="surname-field">ФАМИЛИЯ*:</label>
@@ -50,75 +50,75 @@
             <input class="feedback__input-field" type="text" placeholder="Отчество" name="patronymic-field" id="patronymic-field" value="Викторович">
           </fieldset>
           <fieldset class="feedback__group feedback__group--width-half">
-            <legend class="feedback__title title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
+            <legend class="feedback__subtitle title">КОНТАКТНАЯ ИНФОРМАЦИЯ:</legend>
             <label class="feedback__label" for="phone-field">КОНТАКТНЫЙ ТЕЛЕФОН*:</label>
             <input class="feedback__input-field" type="tel" placeholder="Введите телефон" name="phone-field" id="phone-field" required>
             <label class="feedback__label" for="email-field">ЭЛЕКТРОННАЯ ПОЧТА*:</label>
             <input class="feedback__input-field" type="email" placeholder="Введите e-mail" name="email-field" id="email-field" required>
           </fieldset>
-          <fieldset class="feedback__group feedback__group--width-full">
-            <legend class="feedback__title title">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</legend>
+          <fieldset class="feedback__group feedback__group--impression feedback__group--width-full">
+            <legend class="feedback__subtitle title"><span class="feedback__subtitle-text">ВАШЕ ОБЩЕЕ ВПЕЧАТЛЕНИЕ:</span></legend>
             <ul class="feedback__list feedback__list--columns-2 feedback__list--columns-3">
               <li class="feedback__item">
                 <label class="feedback__label feedback__label--additional">
-                  <input class="visually-hidden" type="radio" name="impression" value="positive impression" checked>
+                  <input class="feedback__input-field visually-hidden" type="radio" name="impression" value="positive impression" checked>
                   <span class="feedback__mark feedback__mark--radio"></span>
                   Скорее положительное
                 </label>
               </li>
               <li class="feedback__item">
                 <label class="feedback__label feedback__label--additional">
-                  <input class="visually-hidden" type="radio" name="impression" value="negative impression">
-                  <span class="feedback__mark feedback__mark--additional"></span>
+                  <input class="feedback__input-field visually-hidden" type="radio" name="impression" value="negative impression">
+                  <span class="feedback__mark feedback__mark--radio"></span>
                   Скорее отрицательное
                 </label>
               </li>
               <li class="feedback__item">
                 <label class="feedback__label feedback__label--additional">
-                  <input class="visually-hidden" type="radio" name="impression" value="no answer">
+                  <input class="feedback__input-field visually-hidden" type="radio" name="impression" value="no answer">
                   <span class="feedback__mark feedback__mark--radio"></span>
                   Затрудняюсь ответить
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__group feedback__group--width-full">
-            <legend class="feedback__title title">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</legend>
+          <fieldset class="feedback__group feedback__group--places feedback__group--width-full">
+            <legend class="feedback__subtitle title"><span class="feedback__subtitle-text">ПОСЕЩЕННЫЕ ДОСТОПРИМЕЧАТЕЛЬНОСТИ:</span></legend>
             <ul class="feedback__list feedback__list--columns-2 feedback__list--columns-4">
               <li class="feedback__item">
                 <label class="feedback__label feedback__label--additional">
-                  <input class="visually-hidden" type="checkbox" name="devils bridge" checked>
+                  <input class="feedback__input-field visually-hidden" type="checkbox" name="devils bridge" checked>
                   <span class="feedback__mark feedback__mark--checkbox"></span>
                   Мост Дьявола
                 </label>
               </li>
               <li class="feedback__item">
                 <label class="feedback__label feedback__label--additional">
-                  <input class="visually-hidden" type="checkbox" name="bell mountain" checked>
+                  <input class="feedback__input-field visually-hidden" type="checkbox" name="bell mountain" checked>
                   <span class="feedback__mark feedback__mark--checkbox"></span>
                   Гора-Колокол
                 </label>
               </li>
               <li class="feedback__item">
                 <label class="feedback__label feedback__label--additional">
-                  <input class="visually-hidden" type="checkbox" name="slide park" checked>
+                  <input class="feedback__input-field visually-hidden" type="checkbox" name="slide park" checked>
                   <span class="feedback__mark feedback__mark--checkbox"></span>
                   Слайд-парк
                 </label>
               </li>
               <li class="feedback__item">
                 <label class="feedback__label feedback__label--additional">
-                  <input class="visually-hidden" type="checkbox" name="red rock">
+                  <input class="feedback__input-field visually-hidden" type="checkbox" name="red rock">
                   <span class="feedback__mark feedback__mark--checkbox"></span>
                   Красные скалы
                 </label>
               </li>
             </ul>
           </fieldset>
-          <fieldset class="feedback__group feedback__group--width-full">
-            <legend class="feedback__title title">ОПИШИТЕ СВОИ ЭМОЦИИ:</legend>
+          <fieldset class="feedback__group feedback__group--emotions feedback__group--width-full">
+            <legend class="feedback__subtitle title"><span class="feedback__subtitle-text">ОПИШИТЕ СВОИ ЭМОЦИИ:</span></legend>
             <label class="visually-hidden" for="message-field">Ваши впечатления:</label>
-            <textarea name="message-field" id="message-field" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
+            <textarea class="feedback__message-field" name="message-field" id="message-field" cols="30" rows="10" placeholder="Опишите подробно все свои восторги"></textarea>
           </fieldset>
           <button class="feedback__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
           <p class="feedback__comment">
@@ -145,8 +145,8 @@
         </ul>
       </section>
       <div class="footer__copyright copyright">
-        <span class="copyright__text">РАЗРАБОТАНО</span>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="img/htmlacademy-logo.svg" alt="htmlacademy."></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><span class="copyright__text">РАЗРАБОТАНО</span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="27" height="35" viewBox="0 0 27 35"><path d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z" fill="currentColor"/></svg>
+        </a>
       </div>
     </footer>
     <div class="modal-failure modal-failure--close">
@@ -159,5 +159,6 @@
       <p class="modal-success__text">СПАСИБО ЗА ВАШЕ УЧАСТИЕ, ВАШ ОТЗЫВ УЖЕ ПОСТУПИЛ К НАМ. В БЛИЖАЙШЕЕ ВРЕМЯ МЫ ОПУБЛИКУЕМ ЕГО НА САЙТЕ.</p>
       <button class="modal-success__button button" type="button">ЗАКРЫТЬ ОКНО</button>
     </div>
+  <script src="js/main-menu.js"></script>
   </body>
 </html>

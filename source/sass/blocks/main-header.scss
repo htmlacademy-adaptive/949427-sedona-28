@@ -1,6 +1,5 @@
 .main-header {
   min-height: 56px;
-  padding: 0 18px;
   background-color: $page-bgcolor-base;
   position: relative;
 }
@@ -13,4 +12,13 @@
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 2;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }

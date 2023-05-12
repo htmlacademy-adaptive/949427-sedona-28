@@ -1,7 +1,7 @@
 .photo-card {
   @media (min-width: $width-tablet) {
     display: grid;
-    grid-template-columns: 1fr 150px;
+    grid-template-columns: 1fr 90px;
     grid-template-rows: repeat(3, auto);
   }
 }
@@ -30,6 +30,7 @@
   @media (min-width: $width-tablet) {
     grid-column: 1/2;
     grid-row: 2/3;
+    padding: 22px 0 0 20px;
   }
 }
 
@@ -41,17 +42,44 @@
   @media (min-width: $width-tablet) {
     grid-column: 1/2;
     grid-row: 3/4;
+    padding: 0 0 16px 20px;
+    margin-bottom: 0;
   }
 }
 
 .photo-card__likes {
+  @media (min-width: $width-tablet) {
+    grid-column: 2/3;
+    grid-row: 2/4;
+    text-align: right;
+    padding: 32px 20px 10px 0;
+  }
+}
+
+.photo-card__likes-number {
+  position: relative;
+
   @include text-base;
   font-weight: 700;
   padding-left: 37px;
 
-  @media (min-width: $width-tablet) {
-    grid-column: 2/3;
-    grid-row: 2/4;
-    align-self: center;
+  &::before {
+    position: absolute;
+    content: "";
+    height: 21px;
+    width: 23px;
+    mask-image: url("../img/decoration/like-icon.svg");
+    background-color: rgba($element-color-light, 0.3);
+    left: 0;
+    top: -6px;
+
+    @media (min-width: $width-tablet) {
+      left: 5px;
+      top: -5px;
+    }
+
+    @media (min-width: $width-desktop) {
+      background-color: $element-color-dark;
+    }
   }
 }
