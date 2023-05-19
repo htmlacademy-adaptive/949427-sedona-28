@@ -289,6 +289,7 @@
   height: 46px;
   background-color: #f2f2f2;
   margin-right: 17px;
+  border-radius: 4px;
 }
 
 .feedback__input-field[type="checkbox"]:checked + .feedback__mark {
@@ -342,6 +343,10 @@
 
 .feedback__input-field:active + .feedback__mark {
   background-color: #d5d5d5;
+}
+
+.feedback__input-field:focus-visible + .feedback__mark {
+  outline: 2px solid #000000;
 }
 
 .feedback__message-field:hover {
