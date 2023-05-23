@@ -36,7 +36,10 @@
     <main class="main-container">
       <section class="main-container__hero hero">
         <h1 class="visually-hidden">О Седоне</h1>
-        <img class="hero__slogan" src="img/slogan.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slogan-tablet.svg">
+          <img class="hero__slogan" src="img/slogan.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+        </picture>
       </section>
       <section class="main-container__advantages advantages">
         <div class="advantages__lead">

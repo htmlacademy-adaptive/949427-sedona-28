@@ -45,25 +45,37 @@
         </p>
         <ul class="photos__list">
           <li class="photos__item photo-card">
-            <img class="photo-card__image" src="img/not-native-land.jpg" width="280" height="280" alt="Закат над автодорогой.">
+            <div class="photo-card__image">
+              <picture>
+                <source media="(min-width: 1200px)" srcset="img/not-native-land-desktop.jpg 1x, img/not-native-land-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="img/not-native-land-tablet.jpg 1x, img/not-native-land-tablet@2x.jpg 2x">
+                <img class="photo-card__image" src="img/not-native-land.jpg" srcset="img/not-native-land@2x.jpg 2x" width="280" height="280" alt="Закат над автодорогой.">
+              </picture>
+            </div>
             <p class="photo-card__title">НЕРОДНЫЕ ПРОСТОРЫ</p>
             <p class="photo-card__author">Автор фото: Борис</p>
             <span class="photo-card__likes"><span class="photo-card__likes-number">1350</span></span>
           </li>
           <li class="photos__item photo-card">
-            <img class="photo-card__image" src="img/native-vegetation.jpg" width="280" height="280" alt="Цветущий кактус на фоне красных скал.">
+            <div class="photo-card__image">
+              <img class="photo-card__image" src="img/native-vegetation.jpg" width="280" height="280" alt="Цветущий кактус на фоне красных скал.">
+            </div>
             <p class="photo-card__title">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</p>
             <p class="photo-card__author">Автор фото: Сергей</p>
             <span class="photo-card__likes"><span class="photo-card__likes-number">143</span></span>
           </li>
           <li class="photos__item photo-card">
-            <img class="photo-card__image" src="img/road-to-north.jpg" width="280" height="280" alt="Горный серпантин.">
+            <div class="photo-card__image">
+              <img class="photo-card__image" src="img/road-to-north.jpg" width="280" height="280" alt="Горный серпантин.">
+            </div>
             <p class="photo-card__title">ДОРОГА НА СЕВЕР</p>
             <p class="photo-card__author">Автор фото: Петр</p>
             <span class="photo-card__likes"><span class="photo-card__likes-number">96</span></span>
           </li>
           <li class="photos__item photo-card">
-            <img class="photo-card__image" src="img/devils-bridge.jpg" width="280" height="280" alt="Мост дьявола.">
+            <div class="photo-card__image">
+              <img class="photo-card__image" src="img/devils-bridge.jpg" width="280" height="280" alt="Мост дьявола.">
+            </div>
             <p class="photo-card__title">МОСТ ДЬЯВОЛА</p>
             <p class="photo-card__author">Автор фото: Антон</p>
             <span class="photo-card__likes"><span class="photo-card__likes-number">254</span></span>

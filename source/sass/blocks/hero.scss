@@ -8,9 +8,20 @@
   background-size: auto, cover;
   text-align: center;
 
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/decoration/hero-spacer.svg"), url("../img/hero-background@2x.jpg");
+    background-size: auto, cover;
+  }
+
   @media (min-width: $width-tablet) {
     min-height: 518px;
     padding: 77px 20px 91px;
+    background-image: url("../img/decoration/hero-spacer.svg"), url("../img/hero-background-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/decoration/hero-spacer.svg"), url("../img/hero-background-tablet@2x.jpg");
+      background-size: auto, cover;
+    }
   }
 }
 
