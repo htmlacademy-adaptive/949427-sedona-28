@@ -4,7 +4,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Седона</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+    <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="img/favicons/favicon-180.png"> <!-- 180×180 -->
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -32,7 +36,10 @@
     <main class="main-container">
       <section class="main-container__hero hero">
         <h1 class="visually-hidden">О Седоне</h1>
-        <img class="hero__slogan" src="img/slogan.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slogan-tablet.svg">
+          <img class="hero__slogan" src="img/slogan.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+        </picture>
       </section>
       <section class="main-container__advantages advantages">
         <div class="advantages__lead">
@@ -50,7 +57,14 @@
             </p>
           </li>
           <li class="advantages__item advantages__item--width-medium">
-            <img class="advantages__image" src="img/photo-city.jpg" width="520" height="260" alt="Двухэтажные деревянные здания на фоне гор.">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-city-desktop.webp 1x, img/photo-city-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-city-tablet.webp 1x, img/photo-city-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-city.webp 1x, img/photo-city@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-city-desktop.jpg 1x, img/photo-city-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-city-tablet.jpg 1x, img/photo-city-tablet@2x.jpg 2x">
+              <img class="advantages__image" src="img/photo-city.jpg" srcset="img/photo-city@2x.jpg 2x" width="320" height="260" alt="Двухэтажные деревянные здания на фоне гор.">
+            </picture>
           </li>
           <li class="advantages__item advantages__item--service advantages__item--house">
             <h3 class="advantages__title advantages__title--service title title--theme-base">ЖИЛЬЕ</h3>
@@ -78,7 +92,14 @@
             </p>
           </li>
           <li class="advantages__item advantages__item--width-medium">
-            <img class="advantages__image" src="img/devils-bridge.jpg" width="320" height="260" alt="Мост дьявола.">
+            <picture>
+              <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/photo-bridge.webp 1x, img/photo-bridge@2x.jpg 2x">
+              <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+              <img class="advantages__image" src="img/photo-bridge.jpg" srcset="img/photo-bridge@2x.jpg 2x" width="320" height="260" alt="Мост дьявола.">
+            </picture>
           </li>
           <li class="advantages__item advantages__item--theme-base">
             <h3 class="advantages__title advantages__title--theme-base title">НЕБОЛЬШАЯ<br> ПЛОЩАДЬ</h3>
@@ -112,7 +133,14 @@
       </section>
       <section class="main-container__map map">
         <h2 class="visually-hidden">Седона на карте.</h2>
-        <img class="map__image" src="img/map-mobile.png" width="320" height="350" alt="Седона на карте автодорог.">
+        <picture>
+          <source type="image/webp" media="(min-width: 1200px)" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/map-desktop.png 1x, img/map-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+          <img class="map__image" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="350" alt="Седона на карте автодорог.">
+        </picture>
       </section>
     </main>
     <footer class="footer">
