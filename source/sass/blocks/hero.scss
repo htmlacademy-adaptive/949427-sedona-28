@@ -57,4 +57,9 @@
   object-fit: cover;
   width: 229px;
   height: 39px;
+
+  @media (min-width: $width-tablet) {
+    width: 457px;
+    height: 78px;
+  }
 }

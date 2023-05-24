@@ -36,7 +36,10 @@
     <main class="main-container">
       <section class="main-container__hero hero hero--size-short hero--no-spacer">
         <h1 class="visually-hidden">Галерея Седоны</h1>
-        <img class="hero__slogan hero__slogan--short" src="img/slogan.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slogan-tablet.svg">
+          <img class="hero__slogan hero__slogan--short" src="img/slogan.svg" alt="Добро пожаловать в Седону.">
+        </picture>
       </section>
       <section class="main-container__photos photos">
         <h2 class="photos__title title">ФОТО И ВИДЕО</h2>
@@ -46,14 +49,16 @@
         <ul class="photos__list">
           <li class="photos__item photo-card">
             <div class="photo-card__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/not-native-land-desktop.webp 1x, img/not-native-land-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/not-native-land-tablet.webp 1x, img/not-native-land-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/not-native-land.webp 1x, img/not-native-land@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/not-native-land-desktop.jpg 1x, img/not-native-land-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/not-native-land-tablet.jpg 1x, img/not-native-land-tablet@2x.jpg 2x">
-                <img class="photo-card__image" src="img/not-native-land.jpg" srcset="img/not-native-land@2x.jpg 2x" width="280" height="280" alt="Закат над автодорогой.">
-              </picture>
+              <a class="photo-card__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/not-native-land-desktop.webp 1x, img/not-native-land-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/not-native-land-tablet.webp 1x, img/not-native-land-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/not-native-land.webp 1x, img/not-native-land@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/not-native-land-desktop.jpg 1x, img/not-native-land-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/not-native-land-tablet.jpg 1x, img/not-native-land-tablet@2x.jpg 2x">
+                  <img class="photo-card__image" src="img/not-native-land.jpg" srcset="img/not-native-land@2x.jpg 2x" width="280" height="280" alt="Закат над автодорогой.">
+                </picture>
+              </a>
             </div>
             <p class="photo-card__title">НЕРОДНЫЕ ПРОСТОРЫ</p>
             <p class="photo-card__author">Автор фото: Борис</p>
@@ -61,14 +66,16 @@
           </li>
           <li class="photos__item photo-card">
             <div class="photo-card__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/native-vegetation-desktop.webp 1x, img/native-vegetation-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/native-vegetation-tablet.webp 1x, img/native-vegetation-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/native-vegetation.webp 1x, img/native-vegetation@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/native-vegetation-desktop.jpg 1x, img/native-vegetation-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/native-vegetation-tablet.jpg 1x, img/native-vegetation-tablet@2x.jpg 2x">
-                <img class="photo-card__image" src="img/native-vegetation.jpg" srcset="img/native-vegetation@2x.jpg 2x" width="280" height="280" alt="Цветущий кактус на фоне красных скал.">
-              </picture>
+              <a class="photo-card__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/native-vegetation-desktop.webp 1x, img/native-vegetation-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/native-vegetation-tablet.webp 1x, img/native-vegetation-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/native-vegetation.webp 1x, img/native-vegetation@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/native-vegetation-desktop.jpg 1x, img/native-vegetation-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/native-vegetation-tablet.jpg 1x, img/native-vegetation-tablet@2x.jpg 2x">
+                  <img class="photo-card__image" src="img/native-vegetation.jpg" srcset="img/native-vegetation@2x.jpg 2x" width="280" height="280" alt="Цветущий кактус на фоне красных скал.">
+                </picture>
+              </a>
             </div>
             <p class="photo-card__title">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</p>
             <p class="photo-card__author">Автор фото: Сергей</p>
@@ -76,14 +83,16 @@
           </li>
           <li class="photos__item photo-card">
             <div class="photo-card__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/road-to-north-desktop.webp 1x, img/road-to-north-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/road-to-north-tablet.webp 1x, img/road-to-north-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/road-to-north.webp 1x, img/road-to-north@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/road-to-north-desktop.jpg 1x, img/road-to-north-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/road-to-north-tablet.jpg 1x, img/road-to-north-tablet@2x.jpg 2x">
-                <img class="photo-card__image" src="img/road-to-north.jpg" srcset="img/road-to-north@2x.jpg 2x" width="280" height="280" alt="Горный серпантин.">
-              </picture>
+              <a class="photo-card__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/road-to-north-desktop.webp 1x, img/road-to-north-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/road-to-north-tablet.webp 1x, img/road-to-north-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/road-to-north.webp 1x, img/road-to-north@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/road-to-north-desktop.jpg 1x, img/road-to-north-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/road-to-north-tablet.jpg 1x, img/road-to-north-tablet@2x.jpg 2x">
+                  <img class="photo-card__image" src="img/road-to-north.jpg" srcset="img/road-to-north@2x.jpg 2x" width="280" height="280" alt="Горный серпантин.">
+                </picture>
+              </a>
             </div>
             <p class="photo-card__title">ДОРОГА НА СЕВЕР</p>
             <p class="photo-card__author">Автор фото: Петр</p>
@@ -91,14 +100,16 @@
           </li>
           <li class="photos__item photo-card">
             <div class="photo-card__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.webp 1x, img/devils-bridge-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/devils-bridge-tablet.webp 1x, img/devils-bridge-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/devils-bridge.webp 1x, img/devils-bridge@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x">
-                <img class="photo-card__image" src="img/devils-bridge.jpg" srcset="img/devils-bridge@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
-              </picture>
+              <a class="photo-card__link" href="#">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.webp 1x, img/devils-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/devils-bridge-tablet.webp 1x, img/devils-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/devils-bridge.webp 1x, img/devils-bridge@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/devils-bridge-desktop.jpg 1x, img/devils-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/devils-bridge-tablet.jpg 1x, img/devils-bridge-tablet@2x.jpg 2x">
+                  <img class="photo-card__image" src="img/devils-bridge.jpg" srcset="img/devils-bridge@2x.jpg 2x" width="280" height="280" alt="Мост дьявола.">
+                </picture>
+              </a>
             </div>
             <p class="photo-card__title">МОСТ ДЬЯВОЛА</p>
             <p class="photo-card__author">Автор фото: Антон</p>
@@ -128,6 +139,7 @@
         #VISITSEDONA
       </p>
       <section class="footer__social social">
+        <h2 class="visually-hidden">Мы в соцсетях.</h2>
         <ul class="social__list">
           <li class="social__item">
             <a class="social__link social__link--vk" href="#"><span class="visually-hidden">Вконтакте.</span></a>
