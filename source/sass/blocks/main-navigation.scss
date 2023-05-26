@@ -118,7 +118,7 @@
 
     &::after {
       content: "";
-      mask-image: url("../img/decoration/icon-cross.svg");
+      mask-image: url("../img/decoration/sprite.svg#icon-cross");
       background-color: $element-color-dark;
       width: 22px;
       height: 22px;
@@ -156,7 +156,7 @@
 
     &::after {
       content: "";
-      mask-image: url("../img/decoration/icon-menu.svg");
+      mask-image: url("../img/decoration/sprite.svg#icon-menu");
       background-color: $button-color-base;
       width: 23px;
       height: 22px;
