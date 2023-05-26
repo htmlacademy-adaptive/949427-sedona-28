@@ -9,6 +9,8 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/favicon-180.png"> <!-- 180×180 -->
     <link rel="manifest" href="manifest.webmanifest">
+    <link rel="preload" href="fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -36,7 +38,10 @@
     <main class="main-container">
       <section class="main-container__hero hero hero--size-short">
         <h1 class="visually-hidden">Ваш отзыв о Седоне</h1>
-        <img class="hero__slogan hero__slogan--short" src="img/slogan.svg" width="282" height="214" alt="Добро пожаловать в Седону.">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/slogan-short-tablet.svg">
+          <img class="hero__slogan hero__slogan--short" src="img/slogan-short.svg" alt="Добро пожаловать в Седону.">
+        </picture>
       </section>
       <section class="main-container__feedback feedback">
         <h2 class="feedback__title title">ОСТАВЬТЕ СВОЙ ОТЗЫВ</h2>

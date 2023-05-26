@@ -9,8 +9,9 @@ import rename from 'gulp-rename';
 import squoosh from 'gulp-libsquoosh';
 import htmlmin from 'gulp-htmlmin';
 import GulpSvgmin from 'gulp-svgmin';
-import svgstore from 'gulp-svgstore';
+import {stacksvg} from "gulp-stacksvg"
 import {deleteAsync} from 'del';
+
 
 // Styles
 
@@ -61,9 +62,16 @@ const createWebp = () => {
 //SVG
 
 const svg = () => {
-    return gulp.src('source/img/**/*.svg')
+  return gulp.src(['source/img/**/*.svg', '!source/img/decoration/sprite/*.svg'])
+    .pipe(GulpSvgmin())
+    .pipe(gulp.dest('build/img'));
+}
+
+const svgSprite = () => {
+  return gulp.src('source/img/decoration/sprite/*.svg')
   .pipe(GulpSvgmin())
-  .pipe(gulp.dest('build/img'));
+  .pipe(stacksvg({ output: `sprite` }))
+  .pipe(gulp.dest('build/img/decoration'));
 }
 
 //Copy
@@ -117,6 +125,7 @@ export const build = gulp.series(
     styles,
     html,
     svg,
+    svgSprite,
     createWebp
   ),
 );
@@ -129,6 +138,7 @@ export default gulp.series(
     styles,
     html,
     svg,
+    svgSprite,
     createWebp
   ),
   gulp.series(

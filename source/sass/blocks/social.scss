@@ -39,19 +39,19 @@
 
   &--vk {
     &::after {
-      background-image: url("../img/decoration/icon-vk.svg");
+      background-image: url("../img/decoration/sprite.svg#icon-vk");
     }
   }
 
   &--telegram {
     &::after {
-      background-image: url("../img/decoration/icon-telegram.svg");
+      background-image: url("../img/decoration/sprite.svg#icon-telegram");
     }
   }
 
   &--youtube {
     &::after {
-      background-image: url("../img/decoration/icon-youtube.svg");
+      background-image: url("../img/decoration/sprite.svg#icon-youtube");
     }
   }
 }
